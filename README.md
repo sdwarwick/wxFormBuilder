@@ -101,7 +101,7 @@ Building:
 ```sh
 git clone --recursive https://github.com/wxFormBuilder/wxFormBuilder
 cd wxFormBuilder
-cmake -S . -B _build -G "Unix Makefiles" --install-prefix "$PWD/_install" -DCMAKE_BUILD_TYPE=Release
+cmake -S . -B _build -G "Unix Makefiles" --install-prefix "$PWD/_install" -DCMAKE_BUILD_TYPE=Release -DWXFB_WXWIDGETS_ENABLE_31=ON
 cmake --build _build --config Release -j `nproc`
 cmake --install _build --config Release
 ```
