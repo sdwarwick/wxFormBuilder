@@ -123,7 +123,7 @@ include(cmake/variable.cmake)
 # BUILD_SHARED_LIBS does only affect win32 search style, wxWidgets_USE_STATIC does only affect unix search style
 stash_variable(BUILD_SHARED_LIBS VALUE ON)
 set(wxWidgets_USE_STATIC OFF)
-if(NOT WXFB_WXWIDGETS_ENABLE_31)
+if(NOT WXFB_WXWIDGETS_ENABLE_31 AND NOT WXFB_WXWIDGETS_ENABLE_30)
   set(wxWidgetsVersion 3.2.0)
 elseif(NOT WXFB_WXWIDGETS_ENABLE_30)
   set(wxWidgetsVersion 3.1.2)
